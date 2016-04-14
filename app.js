@@ -1,0 +1,1 @@
+var Angapp=angular.module("Miapp",[]);
