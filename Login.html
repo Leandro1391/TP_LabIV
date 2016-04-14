@@ -7,6 +7,7 @@
 			<title>UTN FRA</title>
 
 			<!--Estilos-->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 			<link rel="stylesheet" type="text/css" href="estilo.css">
 			<link rel="stylesheet" type="text/css" href="animacion.css">
 			<!--final de Estilos-->
@@ -23,18 +24,27 @@
 		
 			<form id="FormIngreso">
 
-				<input type="text"  placeholder="Usuario" id="numero">
+				<input type="text"  placeholder="Usuario" id="usuario-login">
 				
 				<br>
-				<input type="text"  placeholder="Contraseña" readonly id="intentos">
+				<input type="text"  placeholder="Contraseña" id="contraseña-login">
+                
+                <input type="submit" class="btn btn-primary" value="Iniciar sesión" id="idSIButton9">
+                
 			</form>
-			
+            
+   
 		</div>
 
 	<body>
-
-
-
-
+        
+        <div class="CajaUno animated bounceInDown"> 
+            
+           <span>¿No tienes una cuenta?</span> 
+           <a href="Alta.php">Registrarse</a>
+           
+        </div>
+        
+        
 	</body>
 </html>
