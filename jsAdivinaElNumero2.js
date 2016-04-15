@@ -10,19 +10,95 @@ Desde  6 Intentos hasta 10:”falta técnica”
 Más de 10 intentos: “afortunado en el amor!!”.*/
 
 var numeroSecreto; 
-var contadorIntentos;
+var contadorIntentos=0;
 
 function comenzar()
 {
-	//Genero el número RANDOM entre 1 y 100
-	 
-	
+
+	numeroSecreto=Math.floor(Math.random() *100)+1;
+
+	//inspeccion
+	alert("El número secreto es: " + numeroSecreto);	
 
 }
 
 function verificar()
 {
-	
-	
+	contadorIntentos++;
 
+	numeroIngresado=parseInt(document.getElementById("numero").value);
+
+	document.getElementById("intentos").value=contadorIntentos;
+
+	//inspección
+	//alert("Número ingresado es: " + numeroIngresado);
+
+	switch(contadorIntentos){
+
+		case 1:
+		if (numeroIngresado==numeroSecreto)
+		{
+				alert("Usted es un Psíquico");
+				document.location.href="AdivinaElnumero2.html";
+		}
+		else
+			cerca(numeroIngresado);
+			break;
+		case 2:
+		if (numeroIngresado==numeroSecreto)
+		{
+			alert("excelente percepción");
+			document.location.href="AdivinaElnumero2.html";
+		}
+		else
+			cerca(numeroIngresado);
+			break;
+		case 3:
+		if (numeroIngresado==numeroSecreto)
+		{
+			alert("Esto es suerte");
+			document.location.href="AdivinaElnumero2.html";
+		}
+		else
+			cerca(numeroIngresado);
+			break;
+		case 4:
+		if (numeroIngresado==numeroSecreto)
+		{
+			alert("Excelente técnica");
+			document.location.href="AdivinaElnumero2.html";
+		}
+		else
+			cerca(numeroIngresado);
+		break;
+		case 5:
+		if (numeroIngresado==numeroSecreto)
+		{
+			alert("usted está en la media")
+			document.location.href="AdivinaElnumero2.html";
+		}
+		else
+			cerca(numeroIngresado);
+		break;
+		defualt:
+		if (numeroIngresado==numeroSecreto)
+			if(contadorIntentos>=6 && contadorIntentos<=10)
+			{
+				alert("falta técnica");
+				document.location.href="AdivinaElnumero2.html";
+			}
+			else
+			{
+				alert("afortunado en el amor!!");
+				document.location.href="AdivinaElnumero2.html";
+			}
+	}
+}
+
+function cerca(numero)
+{
+	if (numero<numeroSecreto)
+		alert("falta.....");
+	else
+		alert("se pasó....");
 }

@@ -15,8 +15,9 @@ function comenzar()
 	//Genero el número RANDOM entre 1 y 100
 	numeroSecreto=Math.floor(Math.random() * 100)+1;
 	
-	 
-		alert(numeroSecreto );
+	 	//Muestra el número secreto con una ventana emergente
+		//alert(numeroSecreto );
+		alert("Se generó el número random");
 	
 
 }
@@ -30,7 +31,6 @@ function verificar()
 
 	//Inspeccion
 	//alert("numero ingresado: " + numeroIngresado); 
-
 
 	//si es equal value and equal type ===
 
