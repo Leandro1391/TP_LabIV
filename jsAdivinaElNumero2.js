@@ -18,7 +18,8 @@ function comenzar()
 	numeroSecreto=Math.floor(Math.random() *100)+1;
 
 	//inspeccion
-	alert("El número secreto es: " + numeroSecreto);	
+	//alert("El número secreto es: " + numeroSecreto);
+	alert("se generó el número random");	
 
 }
 
@@ -92,8 +93,11 @@ function verificar()
 				alert("afortunado en el amor!!");
 				document.location.href="AdivinaElnumero2.html";
 			}
+		cerca(numeroIngresado);
 	}
 }
+
+
 
 function cerca(numero)
 {
