@@ -46,6 +46,8 @@ function verificar()
 			cerca(numeroIngresado);
 			break;
 		case 2:
+
+
 		if (numeroIngresado==numeroSecreto)
 		{
 			alert("excelente percepción");
@@ -54,6 +56,8 @@ function verificar()
 		else
 			cerca(numeroIngresado);
 			break;
+
+
 		case 3:
 		if (numeroIngresado==numeroSecreto)
 		{
@@ -63,6 +67,8 @@ function verificar()
 		else
 			cerca(numeroIngresado);
 			break;
+
+
 		case 4:
 		if (numeroIngresado==numeroSecreto)
 		{
@@ -72,6 +78,8 @@ function verificar()
 		else
 			cerca(numeroIngresado);
 		break;
+
+
 		case 5:
 		if (numeroIngresado==numeroSecreto)
 		{
@@ -81,17 +89,20 @@ function verificar()
 		else
 			cerca(numeroIngresado);
 		break;
-		defualt:
+
+		default:
 		if (numeroIngresado==numeroSecreto)
 			if(contadorIntentos>=6 && contadorIntentos<=10)
 			{
 				alert("falta técnica");
 				document.location.href="AdivinaElnumero2.html";
+				break;
 			}
 			else
 			{
 				alert("afortunado en el amor!!");
 				document.location.href="AdivinaElnumero2.html";
+				break;
 			}
 		cerca(numeroIngresado);
 	}
