@@ -27,7 +27,7 @@ function comenzar()
 	document.getElementById("Operador").value=operador;
 	document.getElementById("SegundoNumero").value=numeroDos;
 
-	//setTimeout(Responder, 4000);
+	setTimeout(Responder, 4000);
 
 }//FIN DE LA FUNCIÓN
 

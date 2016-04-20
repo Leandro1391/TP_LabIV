@@ -9,13 +9,20 @@
 		<link rel="stylesheet" type="text/css" href="animacion.css">
 		<!--final de Estilos-->
 
+		<!-- libreria Angular -->
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+		<script type="text/javascript" src="app.js"></script>
+
+		<script type="text/javascript" src="Controladorppt1.js"></script>
+
 		<!--Lógica-Programación-->
-		<script type="text/javascript" src="jsPiedarPapelTijera1.js"></script>
+		<!-- <script type="text/javascript" src="jsPiedarPapelTijera1.js"></script> -->
         <!--Final de Lógica-Programación -->
 		
 
 		</head>
-	<body onload="comenzar()">
+	<body ng-app="app" ng-controller="contPPT1">
 		<div class="CajaUno animated bounceInDown">
 			
 		
@@ -32,9 +39,9 @@
 
 			
 			
-			<img class="PiedraPapelTijera animated zoomInRight " src="imagenes/piedra.jpg" onclick="piedra()">
-			<img class="PiedraPapelTijera animated zoomInUp" src="imagenes/papel.jpg" onclick="papel()">
-			<img class="PiedraPapelTijera animated zoomInLeft"  src="imagenes/tijera.jpg" onclick="tijera()">
+			<img class="PiedraPapelTijera animated zoomInRight " src="imagenes/piedra.jpg" ng-click="piedra()">
+			<img class="PiedraPapelTijera animated zoomInUp" src="imagenes/papel.jpg" ng-click="papel()">
+			<img class="PiedraPapelTijera animated zoomInLeft"  src="imagenes/tijera.jpg" ng-click="tijera()">
 			
 			
 

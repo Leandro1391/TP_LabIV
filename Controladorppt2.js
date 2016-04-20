@@ -4,6 +4,8 @@ Angapp.controller('contPPT2', function($scope){
 	$scope.ganadas=0;
 	$scope.eleccionMaquina="papel";
 	//$scope.papel();
+
+
 	$scope.comenzar=function(){
 		$scope.numeroSecreto =Math.floor( Math.random()*3)+1;
 		//alert(numeroSecreto);
@@ -27,6 +29,7 @@ Angapp.controller('contPPT2', function($scope){
 
 
 	$scope.papel=function(){
+
 							$scope.comenzar();
 							//alert("Hola"); //es una funcion xq está con paréntesis
 							alert("la maquina selecciono: "+$scope.eleccionMaquina);
@@ -101,4 +104,4 @@ Angapp.controller('contPPT2', function($scope){
 
 	}
 	//$scope.papel();
-}) // lo que recibe el controlador es una funcion  -- scope
+}); // lo que recibe el controlador es una funcion  -- scope
